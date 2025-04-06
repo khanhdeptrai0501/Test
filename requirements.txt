@@ -1,28 +1,20 @@
-opencv-python>=4.8.0
-setuptools
-PySide6>=6.8.0
-dayu-path>=0.5.2
-msgpack>=1.1.0
-requests>=2.31.0
-pdfplumber>=0.11.5
-torch
-torchvision
-py7zr>=0.20.8
-rarfile>=4.1
-img2pdf>=0.5.1
-python-doctr[torch]==0.6.0
-azure-ai-vision-imageanalysis>=1.0.0b1
-deepl>=1.16.1
-deep-translator>=1.11.4
-stanza>=1.7.0
-jaconv>=0.3.4
-transformers>=4.49.0
-wget>=3.2
-largestinteriorrectangle>=0.2.0
-paddleocr>=2.8.1
-paddlepaddle>=2.6.1
-loguru>=0.7.2
-fugashi>=1.4.0
-pyperclip>=1.9.0
-unidic-lite>=1.0.8
-openai>=1.13.0
+# Các thư viện cơ bản
+numpy>=1.26.0,<2.0.0  # Phiên bản tương thích với Python 3.12
+opencv-python>=4.8.0  # OpenCV cho xử lý hình ảnh
+flask>=2.0.0          # Web framework
+wget>=3.2             # Thư viện tải file
+
+# Các thư viện OCR và xử lý hình ảnh
+torch>=2.0.0          # PyTorch cho các mô hình deep learning
+largestinteriorrectangle>=0.2.0  # Xử lý hình học
+doctr-pytorch>=0.6.0  # Thư viện OCR (nếu sử dụng)
+
+# Các thư viện hỗ trợ
+Pillow>=10.0.0        # Xử lý hình ảnh
+scikit-image>=0.20.0  # Xử lý hình ảnh nâng cao
+matplotlib>=3.7.0     # Hiển thị hình ảnh (nếu cần)
+pyyaml>=6.0           # Xử lý cấu hình
+
+# Các thư viện tùy chọn (tùy thuộc vào tính năng sử dụng)
+transformers>=4.30.0  # Cho các mô hình NLP (nếu cần)
+huggingface-hub>=0.16.0  # Tải mô hình từ HuggingFace (nếu cần)
